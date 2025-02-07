@@ -1,46 +1,28 @@
+import { Checkbox, styled } from '@mui/material';
 import Button from '@mui/material/Button';
-import { useState } from 'react';
+
+const CustomButton = styled(Button)(({ theme }) => {
+  return theme.unstable_sx({
+    backgroundColor: theme.palette.customColors?.royalBlue,
+    boxShadow: theme.shadows[15],
+    mb: {
+      xs: 4,
+      md: 2,
+      lg: 1,
+      xl: 0,
+    },
+  });
+});
 
 function App() {
-  const [open, setOpen] = useState();
-
   return (
     <div>
-      <Button
-        sx={[
-          {
-            typography: 'h6',
-            borderStyle: 'solid',
-            borderWidth: '2px',
-            borderColor: (theme) => theme.palette.success.dark,
-            width: 1,
-            maxWidth: 'xl',
-            borderRadius: 2,
-            bgcolor: { xs: 'green', sm: 'purple' },
-            boxShadow: 20,
-            '&:hover': {
-              bgcolor: 'blue',
-            },
-            // '&:not(.Mui-disabled)': {
-            //   bgcolor: 'red',
-            // },
-            '& > p,h5': {
-              color: 'error.main',
-            },
-          },
-          open && {
-            bgcolor: 'red',
-            fontSize: '2rem',
-          },
-        ]}
-        color="secondary"
-        variant="contained"
-        onClick={() => setOpen(!open)}
-      >
+      <CustomButton variant="text">Contained</CustomButton>
+      <Button variant="outlined" mycustom="true">
         My Button
-        <p>My paragraph</p>
-        <h5>My h5 text</h5>
       </Button>
+      <div>Some extra text</div>
+      <Checkbox color="secondary" />
     </div>
   );
 }
