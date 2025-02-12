@@ -5,8 +5,6 @@ export default function AutoCompleteExample() {
   const [value, setValue] = useState([]);
   const options = ['Apple', 'Banana', 'Pear', 'Orange'];
 
-  console.log('value', value);
-
   return (
     <Autocomplete
       multiple

@@ -1,9 +1,9 @@
-import { RadioGroup, Autocomplete } from './components';
+import { RadioGroup, Autocomplete, Autocomplete2 } from './components';
 
 function App() {
   return (
     <>
-      <Autocomplete />
+      <Autocomplete2 />
     </>
   );
 }
