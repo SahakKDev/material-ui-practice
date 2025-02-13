@@ -1,5 +1,6 @@
 import {
-  ButtonComp,
+  ButtonGroupComp,
+  // ButtonComp,
   // AutocompleteCustomization,
   // AutocompleteFunc,
   // RadioGroup,
@@ -9,7 +10,7 @@ import {
 function App() {
   return (
     <>
-      <ButtonComp />
+      <ButtonGroupComp />
     </>
   );
 }
