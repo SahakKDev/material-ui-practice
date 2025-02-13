@@ -1,5 +1,6 @@
 import {
-  ButtonGroupComp,
+  CheckboxComp,
+  // ButtonGroupComp,
   // ButtonComp,
   // AutocompleteCustomization,
   // AutocompleteFunc,
@@ -10,7 +11,7 @@ import {
 function App() {
   return (
     <>
-      <ButtonGroupComp />
+      <CheckboxComp />
     </>
   );
 }
