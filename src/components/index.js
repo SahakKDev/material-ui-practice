@@ -7,3 +7,4 @@ export { default as Fab } from './FAB';
 export { default as FormComponents } from './FormComponents';
 export { default as RadioComp } from './Radio';
 export { default as RatingComp } from './Rating';
+export { default as SelectComp } from './Select';
