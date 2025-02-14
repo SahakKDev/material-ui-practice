@@ -1,8 +1,9 @@
 import {
-  CheckboxComp,
+  // Fab,
+  // CheckboxComp,
   // ButtonGroupComp,
   // ButtonComp,
-  // AutocompleteCustomization,
+  AutocompleteCustomization,
   // AutocompleteFunc,
   // RadioGroup,
   // Autocomplete,
@@ -11,7 +12,7 @@ import {
 function App() {
   return (
     <>
-      <CheckboxComp />
+      <AutocompleteCustomization />
     </>
   );
 }
