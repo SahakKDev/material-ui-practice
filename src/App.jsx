@@ -1,6 +1,7 @@
 import {
   // Fab,
-  FormComponents,
+  // FormComponents,
+  RadioComp,
   // CheckboxComp,
   // ButtonGroupComp,
   // ButtonComp,
@@ -13,7 +14,7 @@ import {
 function App() {
   return (
     <>
-      <FormComponents />
+      <RadioComp />
     </>
   );
 }

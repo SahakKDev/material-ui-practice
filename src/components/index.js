@@ -5,3 +5,4 @@ export { default as ButtonGroupComp } from './ButtonGroup';
 export { default as CheckboxComp } from './Checkbox';
 export { default as Fab } from './FAB';
 export { default as FormComponents } from './FormComponents';
+export { default as RadioComp } from './Radio';
