@@ -1,9 +1,10 @@
 import {
+  SliderComp,
   // Fab,
   // FormComponents,
   // RadioComp,
   // RatingComp,
-  SelectComp,
+  // SelectComp,
   // CheckboxComp,
   // ButtonGroupComp,
   // ButtonComp,
@@ -16,7 +17,7 @@ import {
 function App() {
   return (
     <>
-      <SelectComp />
+      <SliderComp />
     </>
   );
 }
