@@ -1,5 +1,6 @@
 import {
-  TextFieldComp,
+  ToggleButtonComp,
+  // TextFieldComp,
   // SwitchComp,
   // SliderComp,
   // Fab,
@@ -19,7 +20,7 @@ import {
 function App() {
   return (
     <>
-      <TextFieldComp />
+      <ToggleButtonComp />
     </>
   );
 }
