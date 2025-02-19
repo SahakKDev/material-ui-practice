@@ -10,3 +10,4 @@ export { default as RatingComp } from './Rating';
 export { default as SelectComp } from './Select';
 export { default as SliderComp } from './Slider';
 export { default as SwitchComp } from './Switch';
+export { default as TextFieldComp } from './TextField';

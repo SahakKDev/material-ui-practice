@@ -1,5 +1,6 @@
 import {
-  SwitchComp,
+  TextFieldComp,
+  // SwitchComp,
   // SliderComp,
   // Fab,
   // FormComponents,
@@ -18,7 +19,7 @@ import {
 function App() {
   return (
     <>
-      <SwitchComp />
+      <TextFieldComp />
     </>
   );
 }
