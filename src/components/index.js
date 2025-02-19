@@ -9,3 +9,4 @@ export { default as RadioComp } from './Radio';
 export { default as RatingComp } from './Rating';
 export { default as SelectComp } from './Select';
 export { default as SliderComp } from './Slider';
+export { default as SwitchComp } from './Switch';

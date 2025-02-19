@@ -1,5 +1,6 @@
 import {
-  SliderComp,
+  SwitchComp,
+  // SliderComp,
   // Fab,
   // FormComponents,
   // RadioComp,
@@ -17,7 +18,7 @@ import {
 function App() {
   return (
     <>
-      <SliderComp />
+      <SwitchComp />
     </>
   );
 }
