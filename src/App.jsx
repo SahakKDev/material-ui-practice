@@ -1,7 +1,7 @@
-import { Avatar } from './data-display-components';
+import { Avatar, Badge } from './data-display-components';
 
 function App() {
-  return <Avatar />;
+  return <Badge />;
 }
 
 export default App;
