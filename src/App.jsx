@@ -1,28 +1,7 @@
-import {
-  ToggleButtonComp,
-  // TextFieldComp,
-  // SwitchComp,
-  // SliderComp,
-  // Fab,
-  // FormComponents,
-  // RadioComp,
-  // RatingComp,
-  // SelectComp,
-  // CheckboxComp,
-  // ButtonGroupComp,
-  // ButtonComp,
-  // AutocompleteCustomization,
-  // AutocompleteFunc,
-  // RadioGroup,
-  // Autocomplete,
-} from './components';
+import { Avatar } from './data-display-components';
 
 function App() {
-  return (
-    <>
-      <ToggleButtonComp />
-    </>
-  );
+  return <Avatar />;
 }
 
 export default App;
