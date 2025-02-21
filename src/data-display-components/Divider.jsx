@@ -9,7 +9,6 @@ export default function DividerComp() {
       <Divider
         variant="middle"
         textAlign="right"
-        variant="inset"
         sx={{
           '&:before': {
             borderColor: 'red',

@@ -1,7 +1,7 @@
-import { Avatar, Badge, Chip, Divider } from './data-display-components';
+import { Avatar, Badge, Chip, Divider, List } from './data-display-components';
 
 function App() {
-  return <Divider />;
+  return <List />;
 }
 
 export default App;
