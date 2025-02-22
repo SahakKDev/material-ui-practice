@@ -56,25 +56,63 @@ export default function TableComp() {
           //  stickyHeader
           sx={{ minWidth: 650 }}
         >
-          <TableHead>
+          <TableHead
+            sx={{
+              '& th': {
+                bgcolor: 'green',
+              },
+            }}
+          >
             <TableRow>
-              <TableCell colSpan={3} align="center">
+              <TableCell
+                sx={{
+                  color: '#fff',
+                  fontFamily: 'Verdana',
+                  fontSize: '2rem',
+                  borderColor: 'black',
+                }}
+                colSpan={3}
+                align="center"
+              >
                 Order History
               </TableCell>
             </TableRow>
-            <TableRow>
+            <TableRow
+              sx={{
+                '& th': {
+                  color: '#fff',
+                  fontFamily: 'Verdana',
+                  fontSize: '1rem',
+                  borderColor: '#000',
+                  borderWidth: 2,
+                },
+              }}
+            >
               <TableCell>Date</TableCell>
               <TableCell>Total</TableCell>
               <TableCell>Status</TableCell>
             </TableRow>
           </TableHead>
-          <TableBody>
+          <TableBody
+            sx={{
+              // bgcolor: 'purple',
+              '& .MuiTableCell-root': {
+                borderColor: '#000',
+                borderWidth: 2,
+                color: '#0a0',
+                fontSize: '1rem',
+              },
+            }}
+          >
             {rows
               // .slice(rowsPerPage * page, rowsPerPage * page + rowsPerPage)
               .map((row, i) => (
                 <TableRow
                   key={i}
-                  sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                  sx={{
+                    '&:last-child td, &:last-child th': { border: 0 },
+                    bgcolor: i % 2 === 0 ? 'pink' : 'lightblue',
+                  }}
                 >
                   <TableCell component="th" scope="row">
                     {new Intl.DateTimeFormat('en-US', {
@@ -118,6 +156,22 @@ export default function TableComp() {
         page={page}
         onPageChange={handleChangePage}
         onRowsPerPageChange={handleChangeRowsPerPage}
+        sx={{
+          '& .MuiTablePagination-selectLabel': {
+            color: 'green',
+            fontSize: '1.5rem',
+            fontFamily: 'Verdana',
+          },
+          '& .MuiTablePagination-select': {
+            color: 'red',
+            '& svg': {
+              fill: 'pink',
+            },
+          },
+          '& .MuiTablePagination-actions': {
+            color: 'blue',
+          },
+        }}
       />
     </Box>
   );
