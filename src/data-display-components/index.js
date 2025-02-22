@@ -5,3 +5,4 @@ export { default as Divider } from './Divider';
 export { default as List } from './List';
 export { default as Table } from './Table';
 export { default as Tooltip } from './Tooltip';
+export { default as Typography } from './Typography';

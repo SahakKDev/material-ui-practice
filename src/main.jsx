@@ -5,26 +5,28 @@ import { createTheme, ThemeProvider } from '@mui/material';
 import './style.css';
 
 const theme = createTheme({
-  // components: {
-  //   MuiAvatarGroup: {
-  //     styleOverrides: {
-  //       root: {
-  //         '& .MuiAvatarGroup-avatar': {
-  //           backgroundColor: 'blue',
-  //         },
-  //       },
-  //     },
-  //   },
-  //   MuiButton: {
-  //     styleOverrides: {
-  //       root: {
-  //         '&.Mui-disabled': {
-  //           backgroundColor: 'red',
-  //         },
-  //       },
-  //     },
-  //   },
-  // },
+  typography: {
+    h6: {
+      color: '#fff',
+      fontFamily: 'Verdana',
+      fontSize: '1rem',
+    },
+    blueText: {
+      color: 'blue',
+      fontSize: '2rem',
+      fontFamily: 'Verdana',
+    },
+  },
+  components: {
+    MuiTypography: {
+      defaultProps: {
+        variantMapping: {
+          h6: 'h3',
+          blueText: 'h6',
+        },
+      },
+    },
+  },
 });
 
 createRoot(document.getElementById('root')).render(

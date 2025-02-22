@@ -6,10 +6,11 @@ import {
   List,
   Table,
   Tooltip,
+  Typography,
 } from './data-display-components';
 
 function App() {
-  return <Tooltip />;
+  return <Typography />;
 }
 
 export default App;
