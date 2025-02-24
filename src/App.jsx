@@ -1,16 +1,7 @@
-import {
-  Avatar,
-  Badge,
-  Chip,
-  Divider,
-  List,
-  Table,
-  Tooltip,
-  Typography,
-} from './data-display-components';
+import { Alert, Backdrop, Dialog } from './feedback-components';
 
 function App() {
-  return <Typography />;
+  return <Dialog />;
 }
 
 export default App;
