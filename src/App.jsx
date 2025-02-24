@@ -1,7 +1,13 @@
-import { Alert, Backdrop, Dialog } from './feedback-components';
+import {
+  Alert,
+  Backdrop,
+  Dialog,
+  Progress,
+  Skeleton,
+} from './feedback-components';
 
 function App() {
-  return <Dialog />;
+  return <Skeleton />;
 }
 
 export default App;
