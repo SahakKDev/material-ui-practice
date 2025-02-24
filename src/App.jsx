@@ -4,10 +4,11 @@ import {
   Dialog,
   Progress,
   Skeleton,
+  Snackbar,
 } from './feedback-components';
 
 function App() {
-  return <Skeleton />;
+  return <Snackbar />;
 }
 
 export default App;
