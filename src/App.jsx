@@ -1,14 +1,7 @@
-import {
-  Alert,
-  Backdrop,
-  Dialog,
-  Progress,
-  Skeleton,
-  Snackbar,
-} from './feedback-components';
+import { Accordion } from './surface-components';
 
 function App() {
-  return <Snackbar />;
+  return <Accordion />;
 }
 
 export default App;

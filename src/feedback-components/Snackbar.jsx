@@ -8,7 +8,7 @@ export default function SnackbarComp() {
     <div>
       <Button onClick={() => setOpen(true)}>Open Snackbar</Button>
       <Snackbar
-        open={true}
+        open={open}
         message="Note archived"
         onClose={() => setOpen(false)}
         autoHideDuration={4000}
