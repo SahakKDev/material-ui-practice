@@ -1,7 +1,7 @@
-import { Accordion, AppBar, Card, Paper } from './surface-components';
+import { BottomNavigation, Breadcrumbs, Drawer } from './navigation-components';
 
 function App() {
-  return <Paper />;
+  return <Drawer />;
 }
 
 export default App;
