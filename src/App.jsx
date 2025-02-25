@@ -1,7 +1,7 @@
-import { Accordion } from './surface-components';
+import { Accordion, AppBar, Card, Paper } from './surface-components';
 
 function App() {
-  return <Accordion />;
+  return <Paper />;
 }
 
 export default App;
