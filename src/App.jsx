@@ -1,7 +1,12 @@
-import { BottomNavigation, Breadcrumbs, Drawer } from './navigation-components';
+import {
+  BottomNavigation,
+  Breadcrumbs,
+  Drawer,
+  Menu,
+} from './navigation-components';
 
 function App() {
-  return <Drawer />;
+  return <Menu />;
 }
 
 export default App;
