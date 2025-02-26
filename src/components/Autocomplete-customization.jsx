@@ -92,7 +92,6 @@ export default function AutocompleteComp() {
       }}
       value={value}
       onChange={(e, newValue) => {
-        console.log(newValue);
         setValue(newValue);
       }}
       // onBlur={(e) => {

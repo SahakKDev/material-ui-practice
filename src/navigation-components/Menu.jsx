@@ -55,6 +55,20 @@ export default function MenuComp() {
           paper: {
             sx: {
               width: '500px',
+              maxHeight: 100,
+              bgcolor: 'green',
+              '& .MuiMenuItem-root': {
+                color: 'red',
+              },
+              '& .Mui-selected': {
+                bgcolor: 'pink',
+                '&:hover': {
+                  bgcolor: 'pink',
+                },
+              },
+              '& .MuiTypography-root, .MuiMenuItem-root': {
+                fontSize: '2rem',
+              },
             },
           },
         }}
@@ -88,9 +102,9 @@ export default function MenuComp() {
         >
           <Typography
             noWrap
-            onMouseEnter={(e) => {
-              console.log(e.target.scrollWidth > e.target.clientWidth);
-            }}
+            // onMouseEnter={(e) => {
+            //   console.log(e.target.scrollWidth > e.target.clientWidth);
+            // }}
             title="Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Exercitationem animi quia aut, unde, illo illum asperiores
             necessitatibus obcaecati quibusdam possimus ad nostrum recusandae

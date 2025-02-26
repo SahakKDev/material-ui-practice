@@ -1,4 +1,4 @@
-import { Checkbox, styled, useTheme } from '@mui/material';
+import { Checkbox, styled } from '@mui/material';
 import Button from '@mui/material/Button';
 
 //Move this to root component and wrap App with ThemeProvider
@@ -44,9 +44,6 @@ const CustomButton = styled(Button)(({ theme }) => {
 });
 
 function App() {
-  const theme = useTheme();
-
-  console.log(theme);
   return (
     <div>
       <CustomButton variant="text">Contained</CustomButton>

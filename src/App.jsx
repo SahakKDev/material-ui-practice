@@ -3,10 +3,11 @@ import {
   Breadcrumbs,
   Drawer,
   Menu,
+  Pagination,
 } from './navigation-components';
 
 function App() {
-  return <Menu />;
+  return <Pagination />;
 }
 
 export default App;

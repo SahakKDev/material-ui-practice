@@ -18,7 +18,6 @@ export default function AlertComp() {
         color="secondary"
         // action={<Button variant="contained">Del</Button>}
         onClose={() => {
-          console.log('close');
           setOpen(false);
         }}
         icon={<CheckIcon fontSize="inherit" />}
