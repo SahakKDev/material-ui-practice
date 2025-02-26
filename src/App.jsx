@@ -4,10 +4,12 @@ import {
   Drawer,
   Menu,
   Pagination,
+  SpeedDial,
+  Stepper,
 } from './navigation-components';
 
 function App() {
-  return <Pagination />;
+  return <Stepper />;
 }
 
 export default App;

@@ -1,5 +1,7 @@
 import { Pagination, PaginationItem } from '@mui/material';
 import { useState } from 'react';
+import ReplyAllIcon from '@mui/icons-material/ReplyAll';
+import RoundaboutRightIcon from '@mui/icons-material/RoundaboutRight';
 
 export default function PaginationComp() {
   const [page, setPage] = useState(1);
@@ -15,7 +17,16 @@ export default function PaginationComp() {
     <Pagination
       count={5}
       renderItem={(item) => {
-        return <PaginationItem {...item} page={data[item.page - 1]} />;
+        return (
+          <PaginationItem
+            {...item}
+            page={data[item.page - 1]}
+            slots={{
+              previous: ReplyAllIcon,
+              next: RoundaboutRightIcon,
+            }}
+          />
+        );
       }}
       page={page}
       onChange={(e, newPage) => setPage(newPage)}
@@ -24,7 +35,18 @@ export default function PaginationComp() {
       variant="outlined"
       showFirstButton
       showLastButton
-      siblingCount={2}
+      // siblingCount={2}
+      // disabled
+      sx={{
+        '& .MuiPaginationItem-page.Mui-selected:not(.Mui-disabled)': {
+          bgcolor: 'orange',
+          borderColor: '#000',
+          color: '#fff',
+          ':hover': {
+            bgcolor: '#000',
+          },
+        },
+      }}
     />
   );
 }
