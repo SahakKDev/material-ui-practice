@@ -1,15 +1,7 @@
-import {
-  BottomNavigation,
-  Breadcrumbs,
-  Drawer,
-  Menu,
-  Pagination,
-  SpeedDial,
-  Stepper,
-} from './navigation-components';
+import { Container, Grid, ImageList, Stack } from './layout-components';
 
 function App() {
-  return <Stepper />;
+  return <Stack />;
 }
 
 export default App;
